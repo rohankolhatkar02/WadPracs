@@ -1,0 +1,52 @@
+body {
+    padding-top: 70px;
+    background: rgb(9, 9, 121);
+    background: linear-gradient(227deg, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background: rgb(9,9,121);
+    background: linear-gradient(108deg, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+    color: rgb(255, 255, 255);
+    /* Set the text color to black */
+    padding: 20px;
+    transition: left 0.3s ease;
+}
+
+.sidebar a {
+    color: rgb(255, 255, 255);
+    /* Set the text color of the links inside the sidebar */
+    text-decoration: none;
+    /* Remove underline from the links */
+}
+
+.sidebar a:hover {
+    color: rgb(255, 255, 255);
+    /* Change the text color on hover if desired */
+}
+
+.sidebar.active {
+    left: 0;
+    /* Show the sidebar when active class is added */
+}
+
+.content {
+    margin-left: 0;
+    /* Adjust the content margin when the sidebar is active */
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+.content.active {
+    margin-left: 250px;
+    /* Adjust the content margin when the sidebar is active */
+}
+
+.card {
+    margin-bottom: 20px;
+}
